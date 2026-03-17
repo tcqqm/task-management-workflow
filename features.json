@@ -45,5 +45,14 @@
       "created": "2026-03-17T12:00:00Z",
       "completed": "2026-03-17T16:00:00Z"
     }
-  ]
+  ],
+  "quality_standards": {
+    "max_line_length": 120,
+    "max_file_lines": 500,
+    "security_checks": [
+      "no_hardcoded_secrets",
+      "input_validation"
+    ]
+  },
+  "quality_history": []
 }
