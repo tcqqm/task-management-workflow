@@ -11,9 +11,9 @@
         "步骤 4：提供使用示例",
         "步骤 5：验证文档清晰易懂"
       ],
-      "passes": false,
+      "passes": true,
       "created": "2026-03-17T12:00:00Z",
-      "completed": null
+      "completed": "2026-03-17T16:00:00Z"
     },
     {
       "id": "feature-002",
@@ -41,9 +41,9 @@
         "步骤 4：显示已完成功能统计",
         "步骤 5：测试脚本输出正确"
       ],
-      "passes": false,
+      "passes": true,
       "created": "2026-03-17T12:00:00Z",
-      "completed": null
+      "completed": "2026-03-17T16:00:00Z"
     }
   ]
 }
