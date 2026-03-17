@@ -1,0 +1,45 @@
+# 依赖目录
+node_modules/
+__pycache__/
+*.pyc
+venv/
+env/
+
+# 编辑器和 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 构建输出
+dist/
+build/
+*.egg-info/
+
+# 环境变量文件
+.env
+.env.local
+
+# 测试覆盖率
+coverage/
+.coverage
+htmlcov/
+
+# 备份文件
+*.bak
+*.backup

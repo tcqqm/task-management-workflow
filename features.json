@@ -1,0 +1,49 @@
+{
+  "features": [
+    {
+      "id": "feature-001",
+      "category": "documentation",
+      "description": "创建项目 README 文档，说明任务管理工作流的使用方法",
+      "steps": [
+        "步骤 1：创建 README.md 文件",
+        "步骤 2：添加项目简介和目标",
+        "步骤 3：说明文件结构和用途",
+        "步骤 4：提供使用示例",
+        "步骤 5：验证文档清晰易懂"
+      ],
+      "passes": false,
+      "created": "2026-03-17T12:00:00Z",
+      "completed": null
+    },
+    {
+      "id": "feature-002",
+      "category": "technical",
+      "description": "初始化 Git 仓库并创建首次提交",
+      "steps": [
+        "步骤 1：运行 git init 初始化仓库",
+        "步骤 2：创建 .gitignore 文件",
+        "步骤 3：添加所有初始文件",
+        "步骤 4：创建首次提交",
+        "步骤 5：验证 git 历史记录正确"
+      ],
+      "passes": false,
+      "created": "2026-03-17T12:00:00Z",
+      "completed": null
+    },
+    {
+      "id": "feature-003",
+      "category": "functional",
+      "description": "实现功能状态查询脚本，快速查看未完成的功能",
+      "steps": [
+        "步骤 1：创建 status.sh 脚本",
+        "步骤 2：解析 features.json 文件",
+        "步骤 3：显示未完成功能列表",
+        "步骤 4：显示已完成功能统计",
+        "步骤 5：测试脚本输出正确"
+      ],
+      "passes": false,
+      "created": "2026-03-17T12:00:00Z",
+      "completed": null
+    }
+  ]
+}
