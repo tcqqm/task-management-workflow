@@ -26,9 +26,9 @@
         "步骤 4：创建首次提交",
         "步骤 5：验证 git 历史记录正确"
       ],
-      "passes": false,
+      "passes": true,
       "created": "2026-03-17T12:00:00Z",
-      "completed": null
+      "completed": "2026-03-17T15:30:00Z"
     },
     {
       "id": "feature-003",
