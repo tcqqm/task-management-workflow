@@ -133,7 +133,8 @@ class QualityChecker:
             result = subprocess.run(
                 ["npm", "test", "--", "--run"],
                 cwd=str(self.project_dir),
-                capture_output=True, text=True, timeout=120,
+                capture_output=True, text=True,
+                encoding="utf-8", errors="replace", timeout=120,
             )
             if result.returncode != 0:
                 issues.append(QualityIssue(
@@ -157,7 +158,8 @@ class QualityChecker:
             result = subprocess.run(
                 ["python", "-m", "pytest", "--tb=short", "-q"],
                 cwd=str(self.project_dir),
-                capture_output=True, text=True, timeout=120,
+                capture_output=True, text=True,
+                encoding="utf-8", errors="replace", timeout=120,
             )
             if result.returncode != 0:
                 issues.append(QualityIssue(
@@ -181,7 +183,8 @@ class QualityChecker:
             result = subprocess.run(
                 ["bash", str(script_path)],
                 cwd=str(self.project_dir),
-                capture_output=True, text=True, timeout=120,
+                capture_output=True, text=True,
+                encoding="utf-8", errors="replace", timeout=120,
             )
             if result.returncode != 0:
                 issues.append(QualityIssue(
@@ -252,7 +255,8 @@ class QualityChecker:
         try:
             result = subprocess.run(
                 ["python", "-m", "py_compile", str(filepath)],
-                capture_output=True, text=True, timeout=10,
+                capture_output=True, text=True,
+                encoding="utf-8", errors="replace", timeout=10,
             )
             if result.returncode != 0:
                 issues.append(QualityIssue(
@@ -338,6 +342,11 @@ def format_issues_report(issues):
 
 if __name__ == "__main__":
     import sys
+    import io
+
+    # 修复 Windows 终端 UTF-8 输出
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
     project = sys.argv[1] if len(sys.argv) > 1 else "."
     checker = QualityChecker(project)
